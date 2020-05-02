@@ -1,0 +1,46 @@
+
+h2 {
+    margin: 0;
+}
+.servicios {
+    border: 3px solid black;
+    display: grid;
+    height: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    /* grid-area: ; */
+
+    /* se puede usar el dense */
+    grid-auto-flow: column; 
+}
+
+@media screen and (min-width: 780px) {
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.servicio {
+    color: white;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio-1 {
+    background-color: darkviolet;
+    
+}
+
+.servicio-2 {
+    background-color: limegreen;
+    
+}
+
+.servicio-3 {
+    background-color: teal;
+    
+}
